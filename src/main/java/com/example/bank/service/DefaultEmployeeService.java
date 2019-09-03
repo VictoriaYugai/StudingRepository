@@ -8,12 +8,13 @@ import org.springframework.stereotype.Service;
 import java.util.List;
 
 @Service
-public class EmpoloyeeService  {
+public class DefaultEmployeeService implements EmployeeService{
 
     EmployeeRepository employeeRepository;
 
-    public EmpoloyeeService(@Autowired EmployeeRepository employeeRepository){
+    public DefaultEmployeeService(@Autowired EmployeeRepository employeeRepository){
         this.employeeRepository = employeeRepository;
+
     }
 
     public Employee addEmployee(Employee employee){

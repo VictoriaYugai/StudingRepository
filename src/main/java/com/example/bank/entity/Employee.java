@@ -5,7 +5,6 @@ import java.io.Serializable;
 
 @Entity
 @Table(name = "employee")
-
 public class Employee{
 
     public Long getId() {
